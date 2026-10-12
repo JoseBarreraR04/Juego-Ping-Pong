@@ -462,10 +462,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1091420571}
   - component: {fileID: 1091420570}
+  - component: {fileID: 1091420572}
   - component: {fileID: 1091420569}
   m_Layer: 0
   m_Name: JugadorDos
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -572,6 +573,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091420572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091420568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c938982754271df489598854de83b59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Paddle
+  speed: 7
 --- !u!1 &1410619138
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,10 +596,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1410619141}
   - component: {fileID: 1410619140}
+  - component: {fileID: 1410619142}
   - component: {fileID: 1410619139}
   m_Layer: 0
   m_Name: JugadorUno
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -692,6 +707,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410619142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410619138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c938982754271df489598854de83b59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Paddle
+  speed: 7
 --- !u!1 &1492221136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,8 +1029,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 785f4af231a49474696c2e9322ed2e27, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
