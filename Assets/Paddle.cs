@@ -13,16 +13,16 @@ public class Paddle : MonoBehaviour {
             if (isPaddle1) {
                 // Controles para el Jugador 1 (W / S)
                 if (Keyboard.current.wKey.isPressed) {
-                    movement = 1f;
+                    movement = 1.5f;
                 } else if (Keyboard.current.sKey.isPressed) {
-                    movement = -1f;
+                    movement = -1.5f;
                 }
             } else {
                 // Controles para el Jugador 2 (Flecha Arriba / Flecha Abajo)
                 if (Keyboard.current.upArrowKey.isPressed) {
-                    movement = 1f;
+                    movement = 1.5f;
                 } else if (Keyboard.current.downArrowKey.isPressed) {
-                    movement = -1f;
+                    movement = -1.5f;
                 }
             }
         }
